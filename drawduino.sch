@@ -1,0 +1,270 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY85-P IC1
+U 1 1 58936650
+P 6150 3450
+F 0 "IC1" H 6150 4012 40  0000 C CNN
+F 1 "ATTINY85-P" H 6150 3936 40  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 6150 3864 35  0000 C CIN
+F 3 "" H 1050 700 60  0000 C CNN
+F 4 "?" H 6150 3450 60  0001 C CNN "PartNo"
+F 5 "?" H 6150 3450 60  0001 C CNN "Manufacturer"
+F 6 "?" H 6150 3450 60  0001 C CNN "Distributor"
+	1    6150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 589366D5
+P 7700 3400
+F 0 "BT1" H 7818 3499 50  0000 L CNN
+F 1 "Battery" H 7818 3408 50  0000 L CNN
+F 2 "Battery_Holders:Keystone_103_1x20mm-CoinCell" H 7818 3309 60  0000 L CNN
+F 3 "" V 3200 2090 60  0000 C CNN
+F 4 "?" H 7700 3400 60  0001 C CNN "PartNo"
+F 5 "?" H 7700 3400 60  0001 C CNN "Manufacturer"
+F 6 "?" H 7700 3400 60  0001 C CNN "Distributor"
+	1    7700 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3250 7700 3200
+Wire Wire Line
+	7500 3200 8350 3200
+Wire Wire Line
+	7700 3550 7700 3700
+Wire Wire Line
+	7500 3700 8350 3700
+$Comp
+L SPEAKER SP1
+U 1 1 58936797
+P 2800 2250
+F 0 "SP1" H 2769 1679 50  0000 C CNN
+F 1 "SPEAKER" H 2769 1770 50  0000 C CNN
+F 2 "Buzzers_Beepers:Buzzer_12x9.5RM7.6" H 2769 1869 60  0000 C CNN
+F 3 "" H 1300 50  60  0000 C CNN
+F 4 "?" H 2800 2250 60  0001 C CNN "PartNo"
+F 5 "?" H 2800 2250 60  0001 C CNN "Manufacturer"
+F 6 "?" H 2800 2250 60  0001 C CNN "Distributor"
+	1    2800 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 5893682A
+P 7700 3200
+F 0 "#PWR01" H 2800 1150 50  0001 C CNN
+F 1 "VCC" H 7717 3373 50  0000 C CNN
+F 2 "" H 2800 1300 60  0000 C CNN
+F 3 "" H 2800 1300 60  0000 C CNN
+	1    7700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5893684A
+P 8350 3400
+F 0 "C2" H 8465 3476 50  0000 L CNN
+F 1 "C" H 8465 3385 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8465 3309 30  0000 L CNN
+F 3 "" H 1900 1250 60  0000 C CNN
+F 4 "?" H 8350 3400 60  0001 C CNN "PartNo"
+F 5 "?" H 8350 3400 60  0001 C CNN "Manufacturer"
+F 6 "?" H 8350 3400 60  0001 C CNN "Distributor"
+	1    8350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3200 8350 3250
+Connection ~ 7700 3200
+Wire Wire Line
+	8350 3700 8350 3550
+Connection ~ 7700 3700
+$Comp
+L R R2
+U 1 1 589368FA
+P 4600 4100
+F 0 "R2" V 4333 4100 50  0000 C CNN
+F 1 "R" V 4424 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4500 4100 30  0000 C CNN
+F 3 "" H 2300 1050 30  0000 C CNN
+F 4 "?" H 4600 4100 60  0001 C CNN "PartNo"
+F 5 "?" H 4600 4100 60  0001 C CNN "Manufacturer"
+F 6 "?" H 4600 4100 60  0001 C CNN "Distributor"
+	1    4600 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 589369C4
+P 4450 4100
+F 0 "#PWR02" H -450 2050 50  0001 C CNN
+F 1 "VCC" H 4467 4273 50  0000 C CNN
+F 2 "" H -450 2200 60  0000 C CNN
+F 3 "" H -450 2200 60  0000 C CNN
+	1    4450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4100 4750 3700
+Wire Wire Line
+	4750 3700 4800 3700
+Wire Wire Line
+	3100 2150 4800 2150
+$Comp
+L GND #PWR03
+U 1 1 58936B1B
+P 7700 3700
+F 0 "#PWR03" H 2700 550 50  0001 C CNN
+F 1 "GND" H 7705 3527 50  0000 C CNN
+F 2 "" H 2700 800 60  0000 C CNN
+F 3 "" H 2700 800 60  0000 C CNN
+	1    7700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58936B6E
+P 3100 2350
+F 0 "#PWR04" H -1900 -800 50  0001 C CNN
+F 1 "GND" H 3105 2177 50  0000 C CNN
+F 2 "" H -1900 -550 60  0000 C CNN
+F 3 "" H -1900 -550 60  0000 C CNN
+	1    3100 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58936BC9
+P 3700 3050
+F 0 "R1" H 3630 2974 50  0000 R CNN
+F 1 "R" H 3630 3065 50  0000 R CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3630 3141 30  0000 R CNN
+F 3 "" H 1400 0   30  0000 C CNN
+F 4 "?" H 3700 3050 60  0001 C CNN "PartNo"
+F 5 "?" H 3700 3050 60  0001 C CNN "Manufacturer"
+F 6 "?" H 3700 3050 60  0001 C CNN "Distributor"
+	1    3700 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2150 4800 3200
+$Comp
+L VCC #PWR05
+U 1 1 58936EF1
+P 3700 2900
+F 0 "#PWR05" H -1200 850 50  0001 C CNN
+F 1 "VCC" H 3717 3073 50  0000 C CNN
+F 2 "" H -1200 1000 60  0000 C CNN
+F 3 "" H -1200 1000 60  0000 C CNN
+	1    3700 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P1
+U 1 1 58936F77
+P 3500 3400
+F 0 "P1" H 3419 3069 50  0000 C CNN
+F 1 "CONN_01X01" H 3419 3160 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3419 3259 60  0000 C CNN
+F 3 "" H -550 100 60  0000 C CNN
+F 4 "?" H 3500 3400 60  0001 C CNN "PartNo"
+F 5 "?" H 3500 3400 60  0001 C CNN "Manufacturer"
+F 6 "?" H 3500 3400 60  0001 C CNN "Distributor"
+	1    3500 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 3400 3700 3200
+$Comp
+L CONN_01X01 P2
+U 1 1 5893701C
+P 3500 3750
+F 0 "P2" H 3419 3419 50  0000 C CNN
+F 1 "CONN_01X01" H 3419 3510 50  0000 C CNN
+F 2 "Wire_Pads:SolderWirePad_single_1-2mmDrill" H 3419 3609 60  0000 C CNN
+F 3 "" H -550 450 60  0000 C CNN
+F 4 "?" H 3500 3750 60  0001 C CNN "PartNo"
+F 5 "?" H 3500 3750 60  0001 C CNN "Manufacturer"
+F 6 "?" H 3500 3750 60  0001 C CNN "Distributor"
+	1    3500 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58937062
+P 3700 3750
+F 0 "#PWR06" H -1300 600 50  0001 C CNN
+F 1 "GND" H 3705 3577 50  0000 C CNN
+F 2 "" H -1300 850 60  0000 C CNN
+F 3 "" H -1300 850 60  0000 C CNN
+	1    3700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3400 3700 3400
+Connection ~ 3700 3400
+$Comp
+L C C1
+U 1 1 58937173
+P 4000 3550
+F 0 "C1" H 4115 3626 50  0000 L CNN
+F 1 "C" H 4115 3535 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4115 3459 30  0000 L CNN
+F 3 "" H -2450 1400 60  0000 C CNN
+F 4 "?" H 4000 3550 60  0001 C CNN "PartNo"
+F 5 "?" H 4000 3550 60  0001 C CNN "Manufacturer"
+F 6 "?" H 4000 3550 60  0001 C CNN "Distributor"
+	1    4000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3700 4000 3750
+Wire Wire Line
+	4000 3750 3700 3750
+Connection ~ 3700 3750
+Connection ~ 4000 3400
+$EndSCHEMATC
